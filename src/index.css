@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bakbak+One&family=Hammersmith+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-blue: #374a67;
+  --color-purple: #616283;
+  --color-green: #8daa9d;
+  --color-red: #d44d5c;
+  --color-pink: #e3b5a4;
+}
+
+html {
+  background-color: var(--color-blue);
+}
