@@ -208,6 +208,260 @@
       "correctChoice": "Equatorial Guinea",
       "points": 5,
       "funFact": "Equatorial Guinea is the only African country where Spanish is an official language, a legacy of Spanish colonization. Spanish is also official in the Dominican Republic, a country in North America"
+    },
+    {
+      "question": "What do you call a grouping of languages which differ in their origins yet share certain features due to geographical proximity?",
+      "choices": ["Sprachbund", "Pidgin", "Creole", "Lingua Franca"],
+      "correctChoice": "Sprachbund",
+      "points": 5,
+      "funFact": "A Sprachbund, also known as a linguistic area, is where languages share features due to contact and proximity, not because they come from a common ancestor."
+    },
+    {
+      "question": "Which of the following is not a manner of articulation?",
+      "choices": ["plosive", "nasal", "affricate", "bilabial"],
+      "correctChoice": "bilabial",
+      "points": 5,
+      "funFact": "Bilabial refers to a place of articulation, specifically where both lips come together. Plosive, nasal, and affricate are all manners of articulation."
+    },
+    {
+      "question": "Which of the following is not a place of articulation?",
+      "choices": ["alveolar", "velar", "pharyngeal", "interspatial"],
+      "correctChoice": "interspatial",
+      "points": 5,
+      "funFact": "Interspatial is not a recognized term in phonetics. Alveolar, velar, and pharyngeal are all places of articulation in the vocal tract."
+    },
+    {
+      "question": "Which of the following languages does not make use of ejectives?",
+      "choices": ["Hausa", "Georgian", "Yucatec Maya", "Ojibwe"],
+      "correctChoice": "Ojibwe",
+      "points": 5,
+      "funFact": "Ejectives are sounds produced with an upward burst of air. While ejectives are commmon in languages native to the Americas, Ojibwe is an exception."
+    },
+    {
+      "question": "Which of the following languages is not tonal?",
+      "choices": ["Punjabi", "Serbo-Croatian", "Swedish", "Swahili"],
+      "correctChoice": "Swahili",
+      "points": 5,
+      "funFact": "Tonal languages use pitch to distinguish word meaning. Other Bantu languages commonly have tone, but Swahili is an exception."
+    },
+    {
+      "question": "Which languages appear on the Rosetta Stone?",
+      "choices": [
+        "Greek and Egyptian",
+        "Greek, Cuneiform, and Egyptian",
+        "Greek, Latin, and Egyptian",
+        "Greek, Akkadian, and Egyptian"
+      ],
+      "correctChoice": "Greek and Egyptian",
+      "points": 5,
+      "funFact": "While there are three versions of the same passage on the Rosetta Stone, there are actually only two languages. The passage is written in Greek, and two different versions of Egyptian -- hieroglyphic script and Demotic script."
+    },
+    {
+      "question": "Which of the following pairs of languages are in the same language family?",
+      "choices": [
+        "Chipewyan and Navajo",
+        "Konkani and Malayalam",
+        "Hausa and Igbo",
+        "Thai and Khmer"
+      ],
+      "correctChoice": "Chipewyan and Navajo",
+      "points": 5,
+      "funFact": "Despite their geographic separation, with languages of many different families filling the space in between, Chipewyan (spoken in Canada's Northern Territories), and Navajo (spoken in the southwest United States) belong to the same language family."
+    },
+    {
+      "question": "Which of the following is not a real language family?",
+      "choices": ["Ural-Altaic", "Austronesian", "Niger-Congo", "Sino-Tibetan"],
+      "correctChoice": "Ural-Altaic",
+      "points": 5,
+      "funFact": "The concept of a Ural-Altaic language family, which would include both Uralic and Altaic languages, has been largely rejected by linguists."
+    },
+    {
+      "question": "Which of the following languages did L. L. Zamenhof speak natively?",
+      "choices": ["Czech", "French", "Yiddish", "German"],
+      "correctChoice": "Yiddish",
+      "points": 5,
+      "funFact": "L. L. Zamenhof is most famous for his invention of the Esperanto language. While he was fluent in multiple languages, he grew up speaking Yiddish and Russian."
+    },
+    {
+      "question": "Which of the following languages is Burmese related to?",
+      "choices": ["Balinese", "Bengali", "Bhojpuri", "Boro"],
+      "correctChoice": "Boro",
+      "points": 5,
+      "funFact": "Burmese and Boro (an official language in India) are both part of the Tibeto-Burman language family."
+    },
+    {
+      "question": "Which family does the Abkhaz language belong to?",
+      "choices": ["Kartvelian", "Turkic", "Caucasian", "Indo-European"],
+      "correctChoice": "Caucasian",
+      "points": 5,
+      "funFact": "Abkhaz belongs to the Caucasian language family, which also includes languages like Georgian and Circassian."
+    },
+    {
+      "question": "Ossetian is thought to be a descendant of which language?",
+      "choices": ["Avestan", "Greek", "Scythian", "Persian"],
+      "correctChoice": "Scythian",
+      "points": 5,
+      "funFact": "Ossetian, spoken in the Caucasus, is believed to have descended from the ancient Scythian language."
+    },
+    {
+      "question": "What are the official languages of Paraguay?",
+      "choices": [
+        "Spanish and Portuguese",
+        "Spanish and Guarani",
+        "Spanish only",
+        "Guarani only"
+      ],
+      "correctChoice": "Spanish and Guarani",
+      "points": 5,
+      "funFact": "Paraguay is unique in the Americas for being officially bilingual; both Spanish and Guarani are official and widely spoken."
+    },
+    {
+      "question": "How many sovereign states have Modern Standard Arabic as an official language?",
+      "choices": ["24", "14", "41", "8"],
+      "correctChoice": "24",
+      "points": 5,
+      "funFact": "As of Modern Standard Arabic is an official language in 24 sovereign states. It is commonly used as a lingua franca among those who may speak highly differing vernacular variants of Arabic."
+    },
+    {
+      "question": "Which of the following is recognized as an official language in New Zealand?",
+      "choices": ["Tongan", "Samoan", "Māori", "Fijian"],
+      "correctChoice": "Māori",
+      "points": 5,
+      "funFact": "Māori, along with English and New Zealand Sign Language, is an official language of New Zealand."
+    },
+    {
+      "question": "In March 2020, the Mongolian government announced that they would be increasing efforts to revitalize use of the traditional Mongolian script. What is the name of that script?",
+      "choices": [
+        "Genghis Mogol bachig",
+        "Manchurian",
+        "Mongolic",
+        "Hudum Mongol bichig"
+      ],
+      "correctChoice": "Hudum Mongol bichig",
+      "points": 5,
+      "funFact": "The traditional Mongolian script, known as Hudum Mongol bichig, was used for centuries. The country adopted the Cyrillic alphabet in the 20th century, but has been taking steps to try to replace Cyrllic with the traditional script."
+    },
+    {
+      "question": "Which language family does Uyghur belong to?",
+      "choices": ["Indo-Iranian", "Sino-Tibetan", "Austroasiatic", "Turkic"],
+      "correctChoice": "Turkic",
+      "points": 5,
+      "funFact": "Uyghur is a Turkic language spoken primarily in the Xinjiang Uyghur Autonomous Region of China."
+    },
+    {
+      "question": "In which year did the Turkish writing system change to adopt the Latin script?",
+      "choices": ["1832", "1928", "1945", "1972"],
+      "correctChoice": "1928",
+      "points": 5,
+      "funFact": "The Turkish language reform in 1928 saw the switch from the Ottoman Turkish script to the Latin script as part of Mustafa Kemal Atatürk's reforms."
+    },
+    {
+      "question": "Which language of South Africa has the most first-language speakers?",
+      "choices": ["Afrikaans", "English", "Zulu", "Xhosa"],
+      "correctChoice": "Zulu",
+      "points": 5,
+      "funFact": "Zulu is the most widely spoken first language in South Africa, followed by Xhosa and Afrikaans."
+    },
+    {
+      "question": "Where is Lingala spoken?",
+      "choices": [
+        "Ghana",
+        "Ethiopia",
+        "Democratic Republic of the Congo",
+        "Tanzania"
+      ],
+      "correctChoice": "Democratic Republic of the Congo",
+      "points": 5,
+      "funFact": "Lingala is spoken in the Democratic Republic of the Congo and a few of the surrounding countries."
+    },
+    {
+      "question": "Which language does the word \"rickshaw\" originate from?",
+      "choices": ["Chinese", "Japanese", "Hindi", "Thai"],
+      "correctChoice": "Japanese",
+      "points": 5,
+      "funFact": "The word 'rickshaw' comes from the Japanese word 'jinrikisha', where 'jin' means human, 'riki' means power, and 'sha' means vehicle."
+    },
+    {
+      "question": "When did Vietnamese widely adopt a variant of the Latin alphabet as its official writing system?",
+      "choices": [
+        "20th century",
+        "15th century",
+        "18th century",
+        "19th century"
+      ],
+      "correctChoice": "20th century",
+      "points": 5,
+      "funFact": "The Vietnamese script, called Quốc Ngữ, was developed by Catholic missionaries in the 17th century. However, it was only in the 20th century that it began to appreciate widespread usage."
+    },
+    {
+      "question": "What is the term for a word or part of a word which varies in pronunciation but not its meaning?",
+      "choices": ["Morpheme", "Allomorph", "Polyseme", "Homophone"],
+      "correctChoice": "Allomorph",
+      "points": 5,
+      "funFact": "A morpheme is the smallest unit of meaning in a language. A phonological variation of a morpheme which retains its meaning is known as an allomorph."
+    },
+    {
+      "question": "In which of the following countries are Sami languages not spoken?",
+      "choices": ["Norway", "Sweden", "Finland", "Denmark"],
+      "correctChoice": "Denmark",
+      "points": 5,
+      "funFact": "Sami languages are spoken in the northern parts of Norway, Sweden, and Finland. They are not native to Denmark."
+    },
+    {
+      "question": "Filipino is a standardized version of which language?",
+      "choices": ["Bisaya", "Ilocano", "Tagalog", "Hiligaynon"],
+      "correctChoice": "Tagalog",
+      "points": 5,
+      "funFact": "Filipino is based on Tagalog and is the national language of the Philippines, alongside English."
+    },
+    {
+      "question": "Which of the following is not considered one of the top ten most commonly used languages on the internet?",
+      "choices": ["Russian", "Arabic", "Bengali", "German"],
+      "correctChoice": "Bengali",
+      "points": 5,
+      "funFact": "While Bengali is spoken by a large number of people globally, it is not among the top ten languages used on the internet as of the last check."
+    },
+    {
+      "question": "Which of the following languages native to the Americas had an official writing system prior to the arrival of Europeans?",
+      "choices": ["Quechua", "Mayan", "Cherokee", "Aymara"],
+      "correctChoice": "Mayan",
+      "points": 5,
+      "funFact": "Mayan, native to modern-day Mexico, was written using a logographic script before the European colonization. The Cherokee syllabary was developed in the 19th century by Sequoyah."
+    },
+    {
+      "question": "Which of the following languages is the largest language (by number of speakers) which is not official or co-official in any country?",
+      "choices": ["Sundanese", "Sinhala", "Javanese", "Kazakh"],
+      "correctChoice": "Javanese",
+      "points": 5,
+      "funFact": "Javanese is spoken by overl 80 million people in Indonesia, especially on the island of Java. Despite the vast number of speakers, it is not an official language of any sovereign territory."
+    },
+    {
+      "question": "The Modi script was previously used for writing which of the following languages?",
+      "choices": ["Kannada", "Oriya", "Marathi", "Gujarati"],
+      "correctChoice": "Marathi",
+      "points": 5,
+      "funFact": "The Modi script was used for writing Marathi from the 13th century to the mid-20th century when it was replaced by the Balbodh style of the Devanagari script."
+    },
+    {
+      "question": "Approximately what percent of words in Xhosa include a click consonant?",
+      "choices": ["0%", "10%", "25%", "50%"],
+      "correctChoice": "10%",
+      "points": 5,
+      "funFact": "Xhosa, with roughly 10% of its vocabulary including click consonants, may take the title for the Niger-Congo language with the widest use of clicks."
+    },
+    {
+      "question": "Which of the following languages conjugates pronouns, not verbs, to indicate tense/aspect?",
+      "choices": ["Zulu", "Hausa", "Swahili", "Wolof"],
+      "correctChoice": "Wolof",
+      "points": 5,
+      "funFact": "Wolof, spoken mainly in Senegal and the Gambia, makes use of verbs that are unchanging stems. Conjugations relating to the action are shifted to pronouns."
+    },
+    {
+      "question": "Languages including Amharic and Tigrinya make use of writing systems which are based on which script?",
+      "choices": ["Arabic", "Ge'ez", "Latin", "Persian"],
+      "correctChoice": "Ge'ez",
+      "points": 5,
+      "funFact": "The Ge'ez script, also known as Ethiopic, is an ancient script used for several languages in Ethiopia and Eritrea, including Amharic and Tigrinya."
     }
   ]
 }

@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import TitleScreen from "./components/TitleScreen";
 import Main from "./components/Main";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [showTitleScreen, setShowTitleScreen] = useState(true);
@@ -27,6 +28,7 @@ export default function App() {
       ) : (
         <Main></Main>
       )}
+      <Footer />
     </>
   );
 }
