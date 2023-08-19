@@ -13,5 +13,30 @@
 }
 
 html {
-  background-color: var(--color-blue);
+  background: radial-gradient(
+    circle at center,
+    #374a67,
+    #2c3e56 50%,
+    black 100%
+  );
+}
+
+/* Exit transition for Header */
+.header-fade-exit {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+.header-fade-exit-active {
+  opacity: 0;
+}
+
+/* Exit transition for Button */
+.button-fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+.button-fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
 }

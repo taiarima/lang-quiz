@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import TitleScreen from "./components/TitleScreen";
 import Main from "./components/Main";
 import { useEffect, useState } from "react";
+import { CSSTransition } from "react-transition-group";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -22,8 +23,22 @@ export default function App() {
     <>
       {showTitleScreen ? (
         <TitleScreen>
-          <Header />
-          <Button onClick={handleShowTitleScreen}>Start</Button>
+          <CSSTransition
+            in={showTitleScreen}
+            timeout={300}
+            classNames="header-fade"
+            unmountOnExit
+          >
+            <Header />
+          </CSSTransition>
+          <CSSTransition
+            in={showTitleScreen}
+            timeout={300}
+            classNames="button-fade"
+            unmountOnExit
+          >
+            <Button onClick={handleShowTitleScreen}>Start</Button>
+          </CSSTransition>
         </TitleScreen>
       ) : (
         <Main></Main>

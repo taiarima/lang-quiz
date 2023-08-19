@@ -1,5 +1,7 @@
 import fishProfImg from "../assets/lang-quiz-img.png";
 
+const exitStyle = "animatecss animatecss-hinge animatecss-delay-1s";
+
 export default function Header() {
   return (
     <header className="flex flex-col items-center cursor-default">
@@ -8,7 +10,7 @@ export default function Header() {
         The Linguist's Challenge
       </h1>
       <h2 className="text-custom-pink text-2xl font-custom m-4 text-center">
-        A Challenging Quiz on Languages and Linguistics
+        An Educational Quiz on Languages and Linguistics
       </h2>
     </header>
   );
