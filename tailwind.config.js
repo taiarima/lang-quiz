@@ -5,10 +5,11 @@ export default {
     extend: {
       fontFamily: {
         title: ["Amatic SC", "cursive"],
-        custom: ["Hammersmith One", "sans-serif"],
+        custom: ["Forum", "cursive"],
       },
       colors: {
         "custom-blue": "var(--color-blue)",
+        "custom-darkblue": "var(--color-darkblue)",
         "custom-purple": "var(--color-purple)",
         "custom-green": "var(--color-green)",
         "custom-red": "var(--color-red)",

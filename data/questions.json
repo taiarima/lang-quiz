@@ -332,7 +332,7 @@
     {
       "question": "In March 2020, the Mongolian government announced that they would be increasing efforts to revitalize use of the traditional Mongolian script. What is the name of that script?",
       "choices": [
-        "Genghis Mogol bachig",
+        "Genghis Mongol bachig",
         "Manchurian",
         "Mongolic",
         "Hudum Mongol bichig"
@@ -363,7 +363,7 @@
       "funFact": "Zulu is the most widely spoken first language in South Africa, followed by Xhosa and Afrikaans."
     },
     {
-      "question": "Where is Lingala spoken?",
+      "question": "In which of the following countries is Lingala spoken?",
       "choices": [
         "Ghana",
         "Ethiopia",
@@ -402,58 +402,58 @@
     },
     {
       "question": "In which of the following countries are Sami languages not spoken?",
-      "choices": ["Norway", "Sweden", "Finland", "Denmark"],
-      "correctChoice": "Denmark",
-      "points": 5,
-      "funFact": "Sami languages are spoken in the northern parts of Norway, Sweden, and Finland. They are not native to Denmark."
+      "choices": ["Norway", "Sweden", "Finland", "Greenland"],
+      "correctChoice": "Greenland",
+      "points": 2,
+      "funFact": "Sami languages are spoken in the northern parts of Norway, Sweden, and Finland. They are not native to Greenland."
     },
     {
       "question": "Filipino is a standardized version of which language?",
       "choices": ["Bisaya", "Ilocano", "Tagalog", "Hiligaynon"],
       "correctChoice": "Tagalog",
-      "points": 5,
+      "points": 1,
       "funFact": "Filipino is based on Tagalog and is the national language of the Philippines, alongside English."
     },
     {
       "question": "Which of the following is not considered one of the top ten most commonly used languages on the internet?",
-      "choices": ["Russian", "Arabic", "Bengali", "German"],
-      "correctChoice": "Bengali",
-      "points": 5,
-      "funFact": "While Bengali is spoken by a large number of people globally, it is not among the top ten languages used on the internet as of the last check."
+      "choices": ["Russian", "Turkish", "Chinese", "Portuguese"],
+      "correctChoice": "Chinese",
+      "points": 2,
+      "funFact": "While Chinese is spoken by a large number of people globally, it is not among the top ten languages used on the internet according to studies published in 2023."
     },
     {
       "question": "Which of the following languages native to the Americas had an official writing system prior to the arrival of Europeans?",
       "choices": ["Quechua", "Mayan", "Cherokee", "Aymara"],
       "correctChoice": "Mayan",
-      "points": 5,
+      "points": 2,
       "funFact": "Mayan, native to modern-day Mexico, was written using a logographic script before the European colonization. The Cherokee syllabary was developed in the 19th century by Sequoyah."
     },
     {
       "question": "Which of the following languages is the largest language (by number of speakers) which is not official or co-official in any country?",
       "choices": ["Sundanese", "Sinhala", "Javanese", "Kazakh"],
       "correctChoice": "Javanese",
-      "points": 5,
+      "points": 3,
       "funFact": "Javanese is spoken by overl 80 million people in Indonesia, especially on the island of Java. Despite the vast number of speakers, it is not an official language of any sovereign territory."
     },
     {
       "question": "The Modi script was previously used for writing which of the following languages?",
       "choices": ["Kannada", "Oriya", "Marathi", "Gujarati"],
       "correctChoice": "Marathi",
-      "points": 5,
+      "points": 10,
       "funFact": "The Modi script was used for writing Marathi from the 13th century to the mid-20th century when it was replaced by the Balbodh style of the Devanagari script."
     },
     {
       "question": "Approximately what percent of words in Xhosa include a click consonant?",
       "choices": ["0%", "10%", "25%", "50%"],
       "correctChoice": "10%",
-      "points": 5,
+      "points": 10,
       "funFact": "Xhosa, with roughly 10% of its vocabulary including click consonants, may take the title for the Niger-Congo language with the widest use of clicks."
     },
     {
       "question": "Which of the following languages conjugates pronouns, not verbs, to indicate tense/aspect?",
       "choices": ["Zapotec", "Lakota", "Kinyarwanda", "Wolof"],
       "correctChoice": "Wolof",
-      "points": 5,
+      "points": 10,
       "funFact": "Wolof, spoken mainly in Senegal and the Gambia, makes use of verbs that are unchanging stems. Conjugations relating to the action are shifted to pronouns."
     },
     {
@@ -474,21 +474,21 @@
       "question": "How many countries recognize Russian as an official language?",
       "choices": ["1", "2", "3", "5"],
       "correctChoice": "5",
-      "points": 5,
+      "points": 2,
       "funFact": "Russian is an official language in Russia, Belarus, Kazakhstan, Kyrgystan, and Tajikistan. There are also a significant amount of speakers in Ukraine, Israel, and the Baltic states."
     },
     {
       "question": "Which of the following Dravidian languages is unique in not making use of aspirated consonants?",
       "choices": ["Telugu", "Kannada", "Malayalam", "Tamil"],
       "correctChoice": "Tamil",
-      "points": 5,
+      "points": 10,
       "funFact": "Among the major Dravidian languages, Tamil stands out for its lack of native aspirated sounds among the languages of India, where most languages distinguish aspirated and non-aspirated consonants."
     },
     {
       "question": "Mesrop Mashtots is famous for inventing the script for which language?",
       "choices": ["Armenian", "Persian", "Cherokee", "Russian"],
       "correctChoice": "Armenian",
-      "points": 5,
+      "points": 10,
       "funFact": "Mesrop Mashtots, a linguist and ecclesiastical leader, developed the Armenian script in the early 5th century. Legend has it that he was inspired to create the script in a dream."
     },
     {
@@ -509,7 +509,7 @@
       "question": "Which language was previously written with the Sorabe alphabet, before the adoption of Latin script?",
       "choices": ["Javanese", "Malagasy", "Swahili", "Sundanese"],
       "correctChoice": "Malagasy",
-      "points": 5,
+      "points": 10,
       "funFact": "The Sorabe alphabet, derived from the Arabic script, was historically used to write the Malagasy language going back to around the 15th century. It remains unclear how the Malagasy people were initially introduced to the Arabic script."
     },
     {
@@ -528,15 +528,97 @@
         "Noam Chomsky"
       ],
       "correctChoice": "Noam Chomsky",
-      "points": 5,
+      "points": 3,
       "funFact": "Noam Chomsky's distinction between 'deep structure' and 'surface structure' revolutionized the understanding of how languages generate varied sentences from common underlying principles."
     },
     {
       "question": "Which ancient linguist is renowned for composing the 'Ashtadhyayi', a foundational treatise on Sanskrit grammar that introduced the world to formal linguistic analysis?",
       "choices": ["Confucius", "Plato", "Sibawayh", "Panini"],
       "correctChoice": "Panini",
-      "points": 5,
+      "points": 3,
       "funFact": "Panini's 'Ashtadhyayi' is often considered the earliest known work of descriptive linguistics and remains a masterpiece of precision in defining the grammatical structure of Sanskrit."
+    },
+    {
+      "question": "Which term describes a variety or style of a language that represents the most prestigious form, often used in formal settings?",
+      "choices": ["Ecolect", "Technolect", "Acrolect", "Ethnolect"],
+      "correctChoice": "Acrolect",
+      "points": 5,
+      "funFact": "An acrolect is the most prestigious variety of a language continuum. It is typically associated with the elite or educated class and is often the standard form used in official contexts."
+    },
+    {
+      "question": "In the layered model of linguistic structure, which field of study is situated as the outermost layer, focusing on the use of language in social contexts?",
+      "choices": ["Morphology", "Pragmatics", "Semantics", "Syntax"],
+      "correctChoice": "Pragmatics",
+      "points": 3,
+      "funFact": "Pragmatics studies how context influences the interpretation of meaning and how speakers use language in different social settings. It is considered the outermost layer because it deals with language in its broadest social context."
+    },
+    {
+      "question": "Which term in linguistics refers to the rhythm, stress, and intonation patterns of spoken language?",
+      "choices": ["Semiotics", "Phonology", "Prosody", "Phonotonics"],
+      "correctChoice": "Prosody",
+      "points": 3,
+      "funFact": "Prosody is crucial for understanding spoken language as it can alter the meaning of words and sentences. For instance, a rising intonation in English can turn a statement into a question."
+    },
+    {
+      "question": "On an audio spectrogram, what is signified by a dark line at the bottom of a consonant's representation?",
+      "choices": ["Harmonics", "Voicing", "Overtones", "Pitch Fluctuation"],
+      "correctChoice": "Voicing",
+      "points": 10,
+      "funFact": "A dark line at the bottom of the spectrogram during a consonant indicates voicing. For example, consonants such as [b, d, ɡ, m, n, ŋ, l, v, z], show this line while, voiceless consonants like [p, t, k, f, s, θ, ʃ] do not."
+    },
+    {
+      "question": "To which major language family do the Mixtec and Zapotec languages belong?",
+      "choices": [
+        "Indo-Mexicanic",
+        "Indo-European",
+        "Mexic-Otoganan",
+        "Oto-Manguean"
+      ],
+      "correctChoice": "Oto-Manguean",
+      "points": 10,
+      "funFact": "Mixtec and Zapotec are both indigenous languages of Mexico and are part of the Oto-Manguean language family, which consists of several indigenous languages spoken mainly in central and southern Mexico."
+    },
+    {
+      "question": "Which term branch of linguistics refers to the study of the historical changes and development in a language over time?",
+      "choices": ["Synchronic", "Asynchronic", "Diachronic", "Chronistic"],
+      "correctChoice": "Diachronic",
+      "points": 5,
+      "funFact": "Diachronic linguistics, often synonymous with historical linguistics, analyzes the evolution and history of languages, looking at linguistic features from multiple points in time."
+    },
+    {
+      "question": "Which term in comparative linguistics is used to refer to a feature of a language which more closely resembles its linguistic ancestors?",
+      "choices": ["Robust", "Conservative", "Achronistic", "Resilient"],
+      "correctChoice": "Conservative",
+      "points": 2,
+      "funFact": "In linguistics, a conservative feature or trait of a language means that it has remained relatively unchanged from an ancestral state, resisting the evolutionary changes that languages typically undergo over time."
+    },
+    {
+      "question": "Which type of stable natural language originates from the mingling and simplification of different languages, and subsequently evolves into a fully developed language with native speakers within a relatively short time span?",
+      "choices": ["Pidgin", "Dialect", "Creole", "Lingua Franca"],
+      "correctChoice": "Creole",
+      "points": 2,
+      "funFact": "Creole languages emerge from the blending of different languages, often initially forming from a simplified structure known as a pidgin. Over time, this can develop into a creole -- a full-fledged language with native speakers, characterized by systematized grammar and other inherited linguistic traits."
+    },
+    {
+      "question": "From which language does Tok Pisin, a creole language, predominantly derive its vocabulary?",
+      "choices": ["English", "French", "Tetum", "Portuguese"],
+      "correctChoice": "English",
+      "points": 2,
+      "funFact": "Tok Pisin, widely spoken in Papua New Guinea, is a creole that has primarily borrowed its lexicon from English, while incorporating elements from various other languages."
+    },
+    {
+      "question": "Which is the only Afroasiatic language recognized as an official language in the European Union?",
+      "choices": ["Hebrew", "Arabic", "Maltese", "Amharic"],
+      "correctChoice": "Maltese",
+      "points": 1,
+      "funFact": "Maltese, spoken in Malta, is the only Afroasiatic language that is an official language of the European Union. It has a unique blend of Arabic roots with a significant influence from Italian and other Mediterranean languages."
+    },
+    {
+      "question": "Which of the following languages do not make use of contour tones?",
+      "choices": ["Lao", "Thai", "Burmese", "Khmer"],
+      "correctChoice": "Khmer",
+      "points": 3,
+      "funFact": "While many Southeast Asian languages use contour tones, Khmer (the official language of Cambodia) does not employ them in its phonology."
     }
   ]
 }
