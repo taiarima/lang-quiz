@@ -3,17 +3,20 @@ import Button from "./components/Button";
 import TitleScreen from "./components/TitleScreen";
 import Main from "./components/Main";
 import { useEffect, useState } from "react";
-import { CSSTransition } from "react-transition-group";
+import { Transition } from "@headlessui/react";
 import Footer from "./components/Footer";
 
 export default function App() {
   const [showTitleScreen, setShowTitleScreen] = useState(true);
-  useEffect(function () {
-    fetch("http://localhost:8000/questions")
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.error("error"));
-  });
+
+  // useEffect(function () {
+  //   fetch("http://localhost:8000/questions")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data))
+  //     .catch((err) => console.error("error"));
+  // });
+
+  //fetch('/your-json-filename.json')
 
   function handleShowTitleScreen() {
     setShowTitleScreen(false);
@@ -21,28 +24,44 @@ export default function App() {
 
   return (
     <>
-      {showTitleScreen ? (
+      <Transition
+        appear={true}
+        show={showTitleScreen}
+        enter="transition-opacity duration-1000"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-2500 delay-500"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
         <TitleScreen>
-          <CSSTransition
-            in={showTitleScreen}
-            timeout={300}
-            classNames="header-fade"
-            unmountOnExit
+          <Transition
+            appear={true}
+            show={showTitleScreen}
+            enter="transition duration-2000"
+            enterFrom="transform rotate-0 translate-y-0"
+            enterTo="transform rotate-0 translate-y-0"
+            leave="transition-transform duration-2000 delay-500"
+            leaveFrom="transform rotate-0 translate-y-0"
+            leaveTo="transform rotate-45 translate-y-full"
           >
             <Header />
-          </CSSTransition>
-          <CSSTransition
-            in={showTitleScreen}
-            timeout={300}
-            classNames="button-fade"
-            unmountOnExit
+          </Transition>
+
+          <Transition
+            show={showTitleScreen}
+            leave="transition transform duration-1000"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-75"
           >
             <Button onClick={handleShowTitleScreen}>Start</Button>
-          </CSSTransition>
+          </Transition>
         </TitleScreen>
-      ) : (
+      </Transition>
+      <Transition show={!showTitleScreen}>
         <Main></Main>
-      )}
+      </Transition>
+
       <Footer />
     </>
   );
