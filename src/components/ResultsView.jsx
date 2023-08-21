@@ -75,7 +75,9 @@ export default function ResultsView({
       <h3 className="text-6xl mx-auto my-4 font-liney">THANK YOU</h3>
 
       {scoresList.length == uniqueNumTries ? (
-        <Button>Start Over</Button>
+        <Button onClick={() => dispatch({ type: "startQuiz" })}>
+          Start Over
+        </Button>
       ) : (
         <Button onClick={() => dispatch({ type: "retakeQuiz" })}>
           Retake Quiz
