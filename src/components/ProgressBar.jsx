@@ -1,5 +1,5 @@
 export default function ProgressBar({ index }) {
-  const percentage = (index / 20) * 100;
+  const percentage = ((index % 20) / 20) * 100;
 
   return (
     <div className="w-full h-4 bg-gray-300 rounded">

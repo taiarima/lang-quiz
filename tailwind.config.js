@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         title: ["Amatic SC", "cursive"],
         custom: ["Forum", "cursive"],
+        liney: ["Tilt Prism", "cursive"],
       },
       colors: {
         "custom-blue": "var(--color-blue)",

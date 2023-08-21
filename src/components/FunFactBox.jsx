@@ -1,13 +1,29 @@
 import Button from "./Button";
 
-export default function FunFactBox({ questions, index }) {
+export default function FunFactBox({
+  questions,
+  index,
+  userChoice,
+  dispatch,
+  quizLength,
+}) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center select-none">
       <p className="w-3/5 bg-custom-darkblue text-white p-4 font-custom text-2xl flex flex-col mx-6">
-        <span>Correct. </span>
+        <span>
+          {userChoice === questions[index].correctChoice
+            ? "Correct."
+            : "Incorrect."}
+        </span>
         {questions[index].funFact}
       </p>
-      <Button>Next</Button>
+      {(index + 1) % 20 !== quizLength ? (
+        <Button onClick={() => dispatch({ type: "nextQuestion" })}>Next</Button>
+      ) : (
+        <Button onClick={() => dispatch({ type: "quizFinished" })}>
+          View Results
+        </Button>
+      )}
     </div>
   );
 }
