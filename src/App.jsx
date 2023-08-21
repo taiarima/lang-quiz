@@ -93,7 +93,7 @@ export default function App() {
   ] = useReducer(reducer, initialState);
 
   useEffect(function () {
-    fetch("/questions.json")
+    fetch("./questions.json")
       .then((resp) => resp.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataNotRetrieved", payload: err }));
