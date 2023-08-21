@@ -17,12 +17,12 @@ export default function FunFactBox({
         </span>
         {questions[index].funFact}
       </p>
-      {(index + 1) % 20 !== quizLength ? (
-        <Button onClick={() => dispatch({ type: "nextQuestion" })}>Next</Button>
-      ) : (
+      {(index + 1) % quizLength === 0 ? (
         <Button onClick={() => dispatch({ type: "quizFinished" })}>
           View Results
         </Button>
+      ) : (
+        <Button onClick={() => dispatch({ type: "nextQuestion" })}>Next</Button>
       )}
     </div>
   );

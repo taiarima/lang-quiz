@@ -38,12 +38,16 @@ const DEFAULT_POINTS_FOR_CORRECT_ANSWER = 5;
 function reducer(state, action) {
   switch (action.type) {
     case "dataReceived":
-      const twentyShuffledQuestions = shuffleArray([...action.payload]);
-      return { ...state, questions: twentyShuffledQuestions, status: "ready" };
+      return { ...state, questions: action.payload, status: "ready" };
     case "dataNotRetrieved":
       return { ...state, status: "error" };
     case "startQuiz":
-      return { ...state, status: "active" };
+      const shuffledQuestions = shuffleArray([...state.questions]);
+      return {
+        ...initialState,
+        questions: shuffledQuestions,
+        status: "active",
+      };
     case "userMadeChoice":
       const correctAnswer = state.questions[state.currIndex].correctChoice;
       const pointsEarned =
@@ -70,7 +74,6 @@ function reducer(state, action) {
         scoresList: [...state.scoresList, state.points],
       };
     case "retakeQuiz":
-      console.log("Trying to retake quiz");
       return {
         ...state,
         status: "active",
@@ -104,99 +107,110 @@ export default function App() {
     }
   }, [userChoice]);
 
+  useEffect(() => {
+    if (status === "finished") {
+      scroll.scrollToTop({ duration: 700, smooth: "easeInOutQuart" });
+    }
+  }, [status]);
+
   return (
     <>
-      {status === "loading" || status === "ready" ? (
-        <Transition
-          appear={true}
-          show={true}
-          enter="transition-opacity duration-1000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-2500"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-10"
-        >
-          <TitleScreen>
-            <Transition
-              appear={true}
-              show={true}
-              enter="transition duration-2000"
-              enterFrom="transform rotate-0 translate-y-0"
-              enterTo="transform rotate-0 translate-y-0"
-              leave="transition-transform duration-2000 delay-700"
-              leaveFrom="transform  translate-y-0"
-              leaveTo="transform -translate-y-full"
-            >
-              <WelcomeHeader />
-            </Transition>
+      {/* Title Screen Transition */}
+      <Transition
+        appear={true}
+        show={status === "loading" || (status === "ready" && currIndex === 0)}
+        enter="transition-opacity duration-1000"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-2500"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <TitleScreen>
+          <Transition
+            appear={true}
+            show={status === "loading" || status === "ready"}
+            enter="transition duration-2000"
+            enterFrom="transform rotate-0 translate-y-0"
+            enterTo="transform rotate-0 translate-y-0"
+            leave="transition-transform duration-2000 delay-700"
+            leaveFrom="transform  translate-y-0"
+            leaveTo="transform -translate-y-full"
+          >
+            <WelcomeHeader />
+          </Transition>
 
-            <Transition
-              appear={true}
-              show={true}
-              enter="transition duration-2000"
-              enterFrom="transform rotate-0 translate-y-0"
-              enterTo="transform rotate-0 translate-y-0"
-              leave="transition transform duration-1000"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-75"
-            >
-              {status === "ready" ? (
-                <Button onClick={() => dispatch({ type: "startQuiz" })}>
-                  Start
-                </Button>
-              ) : (
-                <Button>Loading...</Button>
-              )}
-            </Transition>
-          </TitleScreen>
-        </Transition>
-      ) : null}
+          <Transition
+            appear={true}
+            show={status === "loading" || status === "ready"}
+            enter="transition duration-2000"
+            enterFrom="transform rotate-0 translate-y-0"
+            enterTo="transform rotate-0 translate-y-0"
+            leave="transition transform duration-1000"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-75"
+          >
+            {status === "ready" ? (
+              <Button onClick={() => dispatch({ type: "startQuiz" })}>
+                Start
+              </Button>
+            ) : (
+              <Button>Loading...</Button>
+            )}
+          </Transition>
+        </TitleScreen>
+      </Transition>
 
-      {status === "active" ? (
-        <Transition
-          show={true}
-          enter="transition-opacity duration-2000 delay-2500"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-2000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <Main>
-            <QuizHeader />
-            <QuestionBox questions={questions} index={currIndex} />
-            <ChoicesBox
+      {/* Main Quiz Transition */}
+      <Transition
+        show={status === "active"}
+        enter="transition-opacity duration-2000 delay-2500"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-2000"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <Main>
+          <QuizHeader />
+          <QuestionBox questions={questions} index={currIndex} />
+          <ChoicesBox
+            questions={questions}
+            index={currIndex}
+            dispatch={dispatch}
+            userChoice={userChoice}
+          />
+          {userChoice !== null && (
+            <FunFactBox
               questions={questions}
               index={currIndex}
-              dispatch={dispatch}
               userChoice={userChoice}
+              dispatch={dispatch}
+              quizLength={QUIZ_LENGTH}
             />
-            {userChoice !== null && (
-              <FunFactBox
-                questions={questions}
-                index={currIndex}
-                userChoice={userChoice}
-                dispatch={dispatch}
-                quizLength={QUIZ_LENGTH}
-              />
-            )}
-          </Main>
-        </Transition>
-      ) : null}
+          )}
+        </Main>
+      </Transition>
 
-      {status === "finished" ? (
-        <>
-          <QuizHeader />
-          <ResultsView
-            points={points}
-            scoresList={scoresList}
-            bestScore={bestScore}
-            uniqueNumTries={Math.round(questions.length / QUIZ_LENGTH)}
-            dispatch={dispatch}
-          />
-        </>
-      ) : null}
+      {/* Results Screen Transition */}
+      <Transition
+        show={status === "finished"}
+        enter="transition-opacity duration-1000"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-1500"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <QuizHeader />
+        <ResultsView
+          points={points}
+          scoresList={scoresList}
+          bestScore={bestScore}
+          uniqueNumTries={Math.round(questions.length / QUIZ_LENGTH)}
+          dispatch={dispatch}
+        />
+      </Transition>
 
       <Footer />
     </>
