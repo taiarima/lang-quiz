@@ -72,7 +72,7 @@ export default function ResultsView({
         </a>{" "}
         where I talk about linguistics, foreign language learning, and more.
       </p>
-      <h3 className="text-6xl mx-auto my-4 font-liney">THANK YOU</h3>
+      <h3 className="text-6xl mx-auto my-4 font-liney text-center">THANK YOU</h3>
 
       {scoresList.length == uniqueNumTries ? (
         <Button onClick={() => dispatch({ type: "startQuiz" })}>
