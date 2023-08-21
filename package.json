@@ -1,8 +1,8 @@
 {
-  "homepage": "http://taiarima.github.io/lang-quiz",
   "name": "lang-quiz",
+  "homepage": "https://taiarima.github.io/lang-quiz",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "server": "json-server --watch data/questions.json --port 8000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
