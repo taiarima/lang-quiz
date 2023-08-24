@@ -340,14 +340,14 @@
     "choices": ["Indo-Iranian", "Sino-Tibetan", "Austroasiatic", "Turkic"],
     "correctChoice": "Turkic",
     "points": 5,
-    "funFact": "Uyghur is a Turkic language spoken primarily in the Xinjiang Uyghur Autonomous Region of China."
+    "funFact": "Uyghur is a Turkic language spoken primarily in the Xinjiang Uyghur Autonomous Region of China. It is related to languages like Turkish and Uzbek."
   },
   {
     "question": "In which year did the Turkish writing system change to adopt the Latin script?",
     "choices": ["1832", "1928", "1945", "1972"],
     "correctChoice": "1928",
     "points": 5,
-    "funFact": "The Turkish language reform in 1928 saw the switch from the Ottoman Turkish script to the Latin script as part of Mustafa Kemal Atatürk's reforms."
+    "funFact": "The Turkish language reform in 1928 saw the switch from the Ottoman Turkish script (based on the Perso-Arabic script) to the Latin script as part of Mustafa Kemal Atatürk's reforms."
   },
   {
     "question": "Which language of South Africa has the most first-language speakers?",
@@ -422,7 +422,7 @@
     "choices": ["Sundanese", "Sinhala", "Javanese", "Kazakh"],
     "correctChoice": "Javanese",
     "points": 3,
-    "funFact": "Javanese is spoken by overl 80 million people in Indonesia, especially on the island of Java. Despite the vast number of speakers, it is not an official language of any sovereign territory."
+    "funFact": "Javanese is spoken by over 80 million people in Indonesia, especially on the island of Java. Despite the vast number of speakers, it is not an official language of any sovereign territory."
   },
   {
     "question": "The Modi script was previously used for writing which of the following languages?",
@@ -620,5 +620,17 @@
     "correctChoice": "Language isolates",
     "points": 1,
     "funFact": "A language isolate is a language that has no proven genetic relationship with any other living language. While linguistic relationships are typically determined through shared vocabulary, grammar, or phonetic features, isolates like Ainu in Japan, Burushaski in Pakistan, and Kusunda in Nepal remain unique, with no identifiable linguistic relatives."
+  },
+  {
+    "question": "Which of the following scripts is not currently used to write any contemporary Turkic language?",
+    "choices": [
+      "Latin script",
+      "Perso-Arabic script",
+      "Cyrillic",
+      "Greek script"
+    ],
+    "correctChoice": "Greek script",
+    "points": 10,
+    "funFact": "While many Turkic languages previously employed the Perso-Arabic script in their writing, there are few, such as Uyghur, that still do today. Latin script is used by Turkish, the Turkic language with most speakers. Cyrillic continues to be used by languages including Kazakh and Kyrgyz. Some Turkic langauges including Uzbek and Kazakh have made commitments to transition from using Cyrllic to Latin script in recent years. The Greek script had previously been used to write Karamanli Turkish, but has since gone out of use as the official orthography of any Turkic language."
   }
 ]
